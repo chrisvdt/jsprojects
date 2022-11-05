@@ -7,7 +7,7 @@ var cubeRotation = 0.0;
 
 window.onload = function(){
   OBJ.downloadMeshes({
-    'sphere': 'assets/sphere.obj',
+    'sphere': 'assets/head.obj',
     'env'   : 'assets/env.obj'
   }, main);
 }
@@ -227,7 +227,7 @@ function drawScene(gl, app, deltaTime) {
   mat4.translate(
     modelViewMatrix, // destination matrix
     modelViewMatrix, // matrix to translate
-    [0.0, 0.0, -20.0]
+    [0.0, 0.0, -5.0]
   ); // amount to translate
 
 
